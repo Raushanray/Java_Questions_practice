@@ -1,0 +1,25 @@
+package java_8_functions_questions.core;
+
+class A {
+    public A() {
+        System.out.println("A");
+    }
+}
+
+class B extends A {
+    public B() {
+        System.out.println("B");
+    }
+}
+
+class C extends B {
+    public C() {
+        System.out.println("C");
+    }
+}
+
+public class InheritanceExample {
+    public static void main(String[] args) {
+        B b = new C();
+    }
+}
